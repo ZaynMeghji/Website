@@ -1,0 +1,153 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+    background-color: #ffffff;
+    color: #ffffff;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  
+.banner1 {
+    background-image: url("images/Banner_image.jpg");
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100vw;
+    height: 100vh;
+}
+
+.banner2 {
+    background-image: url("images/Banner_image.jpg");
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100vw;
+    height: 150px;
+}
+
+.footer {
+    background-image: url("images/Banner_image.jpg");
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100vw;
+    height: 150px;
+}
+
+  h1 {
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .container {
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    gap: 0px;         /* Space between boxes */
+    flex-wrap: wrap;    /* Stack on small screens */
+  }
+  
+  .box1 {
+    background-color: #1E2A38;
+    padding: 20px;
+    flex: 1;            /* Equal width */
+    min-width: 250px;   /* Prevents boxes from shrinking too much */
+    height: 300px;
+    text-align: center;
+  }
+
+ .box2 {
+  background-color: #fefefe;
+  padding: 20px;
+  flex: 1;            /* Equal width */
+  min-width: 250px;   /* Prevents boxes from shrinking too much */
+  height: 300px;
+  text-align: center;
+  color:#1E2A38
+  }
+  
+  ul {
+    padding-left: 20px;          /* Adjust bullet indentation */
+    margin: 0;                   /* Remove extra spacing if needed */
+    list-style-position: inside; /* Bullet appears right next to text */
+  }
+  
+  .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 5%;
+  flex-wrap: wrap;
+}
+
+.header-text h1 {
+  margin-right: 20px;
+  font-size: 2rem;
+}
+
+.header-text p {
+  margin-right: 20px;
+  font-size: 1rem;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #0D47A1;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Specific styling for carousel boxes */
+.carousel-box {
+  display: flex;
+  flex-direction: column;  /* Stack heading and carousel vertically */
+  align-items: center;     /* Center content horizontally */
+  gap: 0;               /* Space between elements */
+  padding: 0;
+  height: 300px;
+}
+
+/* Carousel image styling */
+.carousel {
+  width: 100%;              /* Make image fill the box width */
+  height: 100%;             /* Keep original aspect ratio */
+  object-fit: cover;  /* Crop to fill box neatly */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Subtle shadow */
+  transition: opacity 1s ease-in-out; /* Smooth fade effect if needed */
+}
+
+.header-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  gap: 10px;
+}
+
+.contact-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+  margin-top: 20px;
+  color:#1E2A38;
+  height: 500px;
+}
+
+.column {
+  background-color: #ffffff; /* light background for each column */
+  text-align: center;
+  padding: 40px;
+}

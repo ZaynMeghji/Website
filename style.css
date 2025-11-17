@@ -9,7 +9,7 @@ body {
   }
   
 .banner1 {
-    background-image: url("images/Banner_image.jpg");
+    background-image: url("Images/Banner_image.jpg");
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -20,7 +20,7 @@ body {
 }
 
 .banner2 {
-    background-image: url("images/Banner_image.jpg");
+    background-image: url("Images/Banner_image.jpg");
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -31,7 +31,7 @@ body {
 }
 
 .footer {
-    background-image: url("images/Banner_image.jpg");
+    background-image: url("Images/Banner_image.jpg");
     color: white;
     padding: 10px 0;
     text-align: center;

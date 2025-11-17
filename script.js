@@ -2,10 +2,10 @@
 
 // Array of image paths
 const images = [
-  "images/Squash.jpg",
-  "images/Squash - Copy (2).jpg",
-  "images/Squash - Copy (3).jpg",
-  "images/Squash - Copy (4).jpg",
+  "Images/Squash.jpg",
+  "Images/Squash - Copy (2).jpg",
+  "Images/Squash - Copy (3).jpg",
+  "Images/Squash - Copy (4).jpg",
 ];
 
 // Select the image element by ID

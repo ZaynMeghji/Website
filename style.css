@@ -27,12 +27,12 @@ body {
     font-size: 24px;
     font-weight: bold;
     width: 100vw;
-    height: 150px;
+    height: 200px;
 }
 
 .footer {
-    background-image: url("Images/Banner_image.jpg");
-    color: white;
+    background-color: #fefefe;
+    color: rgb(0, 0, 0);
     padding: 10px 0;
     text-align: center;
     font-size: 24px;
@@ -55,12 +55,13 @@ body {
   }
   
   .box1 {
-    background-color: #1E2A38;
+    background-color: #fefefe;
     padding: 20px;
     flex: 1;            /* Equal width */
     min-width: 250px;   /* Prevents boxes from shrinking too much */
     height: 300px;
     text-align: center;
+    color: #000000
   }
 
  .box2 {
@@ -78,6 +79,25 @@ body {
     margin: 0;                   /* Remove extra spacing if needed */
     list-style-position: inside; /* Bullet appears right next to text */
   }
+
+.top-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: sticky;
+  }
+
+  .top-menu ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.top-menu ul li a:hover {
+  background-color: #111111;
+}
   
   .header-content {
   display: flex;
@@ -102,6 +122,15 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
+}
+
+.header-body {
+  display: flex;
+  text-align: left;
+  flex-wrap: wrap;
+  padding-top: 250px;
+  width: 33%;
+  padding-left: 5%
 }
 
 .button {

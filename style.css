@@ -26,6 +26,9 @@ body {
 
 .banner1 {
     background-image: url("Images/Banner_image.jpg");
+    background-size: cover;       /* Fixes the scaling */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Stops it from repeating */
     color: white;
     padding: 0.625rem 0;       /* 10px top/bottom */
     text-align: center;
@@ -37,6 +40,9 @@ body {
 
 .banner2 {
     background-image: url("Images/Banner_image.jpg");
+    background-size: cover;       /* Fixes the scaling */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Stops it from repeating */
     color: white;
     padding: 0.625rem 0;       /* 10px top/bottom */
     text-align: center;

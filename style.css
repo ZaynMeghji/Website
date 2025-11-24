@@ -128,11 +128,9 @@ ul {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 1.25rem;        /* 20px */
     color:#1E2A38;
-    height: 31.25rem;           /* 500px */
 }
 
 .column {
     background-color: #ffffff;
     text-align: center;
-    padding: 2.5rem;            /* 40px */
 }

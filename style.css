@@ -31,21 +31,43 @@ body {
 }
 
 .footer {
-    background: linear-gradient(to right, #ffffff, #fefefe);;
-    color: rgb(0, 0, 0);
-    padding: 10px 0;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    width: 100%;
-    height: auto;
-    border-top: 1px solid #e0e6ed; /* subtle divider */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
 }
 
   h1 {
     color: #ffffff;
     text-align: left;
   }
+
+ .homecontainer {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.cta-button .button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 0.85rem 1.75rem;
+  background-color: #2e7d32; /* natural green */
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
 
   .container {
     margin-top: 0;
@@ -65,6 +87,11 @@ body {
     color: #000000
   }
 
+  /* Reduce the gap coming from the text */
+.box1 p {
+  margin-bottom: 0.5rem; 
+}
+
  .box2 {
   background-color: #fefefe;
   padding: 20px;
@@ -74,11 +101,16 @@ body {
   text-align: center;
   color:#1E2A38
   }
+
+.servicesimage {
+  max-width: 100%;
+  height: auto;
+}
   
   ul {
     padding-left: 20px;          /* Adjust bullet indentation */
     margin: 0;                   /* Remove extra spacing if needed */
-    list-style-position: inside; /* Bullet appears right next to text */
+    list-style-position: outside; /* Bullet appears right next to text */
   }
 
 .top-menu ul {
@@ -142,24 +174,6 @@ body {
   text-decoration: none;
 }
 
-/* Specific styling for carousel boxes */
-.carousel-box {
-  display: flex;
-  flex-direction: column;  /* Stack heading and carousel vertically */
-  align-items: center;     /* Center content horizontally */
-  gap: 0;               /* Space between elements */
-  padding: 0;
-  height: 300px;
-}
-
-/* Carousel image styling */
-.carousel {
-  width: 100%;              /* Make image fill the box width */
-  height: 100%;             /* Keep original aspect ratio */
-  object-fit: cover;  /* Crop to fill box neatly */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Subtle shadow */
-  transition: opacity 1s ease-in-out; /* Smooth fade effect if needed */
-}
 
 .header-actions {
   display: flex;
@@ -173,11 +187,13 @@ body {
   grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
   margin-top: 20px;
   color:#1E2A38;
-  height: 500px;
+  height: 100%;
 }
 
 .column {
   background-color: #ffffff; /* light background for each column */
-  text-align: center;
+  text-align: left;
   padding: 40px;
+  display: flex;
+  flex-direction: column;
 }

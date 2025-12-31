@@ -193,7 +193,7 @@ body {
 .column {
   background-color: #ffffff; /* light background for each column */
   text-align: left;
-  padding: 40px;
+  padding: 5%;
   display: flex;
   flex-direction: column;
 }

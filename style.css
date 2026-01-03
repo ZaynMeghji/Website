@@ -161,6 +161,13 @@ body {
   flex-wrap: wrap;
 }
 
+@media (max-width: 767px) {
+  .header-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
 .header-text h1 {
   margin-right: 20px;
   font-size: 2rem;

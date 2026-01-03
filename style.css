@@ -91,7 +91,7 @@ main {
     padding: 20px;
     flex: 1;            /* Equal width */
     min-width: 250px;   /* Prevents boxes from shrinking too much */
-    height: 300px;
+    height: auto;
     text-align: center;
     color: #000000
   }
@@ -106,7 +106,7 @@ main {
   padding: 20px;
   flex: 1;            /* Equal width */
   min-width: 250px;   /* Prevents boxes from shrinking too much */
-  height: 300px;
+  height auto;
   text-align: center;
   color:#1E2A38
   }

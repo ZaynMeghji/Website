@@ -120,39 +120,51 @@ main {
     padding-left: 20px;          /* Adjust bullet indentation */
     margin: 0;                   /* Remove extra spacing if needed */
     list-style-position: outside; /* Bullet appears right next to text */
+    list-style: none;          /* Removes default bullets */
   }
 
 .top-menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  background-color: white;       /* The solid white background */
+  display: flex;                 /* Enables side-by-side layout */
+  justify-content: start;
+  align-items: center;           /* Centers items vertically */
+  padding: 0 2rem;               /* Adds spacing on the sides */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow */
+  position: sticky;              /* Optional: keeps nav at top when scrolling */
+  top: 0;
+  z-index: 1000;
   }
 
   .top-menu ul li a {
   display: block;
-  color: white;
-  padding: 14px 16px;
+  color: rgb(0, 0, 0);
+  padding: 2px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .top-menu ul li a:hover {
   background-color: #0d48a175;
 }
 
+/* --- 4. Mobile Layout (Default) --- */
 .menu {
   display: none;
-  flex-direction:column;
+  flex-direction: column;
+  width: 100%; /* On mobile, menu takes full width */
 }
 
 .menu.open {
   display: flex;
 }
 
+/* --- 5. Desktop Layout (The Fix) --- */
 @media (min-width: 768px) {
   .menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* CHANGED: This makes the links horizontal! */
+    gap: 10px;           /* Adds space between the links */
+    width: auto;         /* Let the menu take only the space it needs */
   }
 
   .menu-toggle {

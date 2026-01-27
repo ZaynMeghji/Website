@@ -116,61 +116,73 @@ main {
   height: auto;
 }
   
-  ul {
-    padding-left: 20px;          /* Adjust bullet indentation */
-    margin: 0;                   /* Remove extra spacing if needed */
-    list-style-position: outside; /* Bullet appears right next to text */
-    list-style: none;          /* Removes default bullets */
-  }
+/* --- Base Styles (Mobile First) --- */
+ul {
+  padding-left: 0;          /* Remove default bullet indentation */
+  margin: 0;                /* Remove default spacing */
+  list-style: none;         /* Remove bullets */
+}
 
-.top-menu ul {
-  background-color: white;       /* The solid white background */
-  display: flex;                 /* Enables side-by-side layout */
-  justify-content: start;
-  align-items: center;           /* Centers items vertically */
-  padding: 0 2rem;               /* Adds spacing on the sides */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow */
-  position: sticky;              /* Optional: keeps nav at top when scrolling */
+.top-menu {
+  background-color: white;  
+  position: sticky;
   top: 0;
   z-index: 1000;
-  }
-
-  .top-menu ul li a {
-  display: block;
-  color: rgb(0, 0, 0);
-  padding: 2px;
-  text-decoration: none;
-  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;          /* Horizontal padding for menu */
 }
 
-.top-menu ul li a:hover {
-  background-color: #0d48a175;
+/* Hamburger button */
+.menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-/* --- 4. Mobile Layout (Default) --- */
+/* Menu hidden by default on mobile */
 .menu {
-  display: none;
-  flex-direction: column;
-  width: 100%; /* On mobile, menu takes full width */
+  display: none;             /* Hidden until toggled open */
+  flex-direction: column;    /* Vertical layout on mobile */
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .menu.open {
-  display: flex;
+  display: flex;             /* Shows menu when JS adds 'open' */
 }
 
-/* --- 5. Desktop Layout (The Fix) --- */
+/* Menu links */
+.menu li a {
+  display: block;
+  padding: 2px;              /* Matches your previous padding */
+  text-decoration: none;
+  color: rgb(0,0,0);
+  font-size: 14px;
+}
+
+.menu li a:hover {
+  background-color: rgba(13, 72, 161, 0.46); /* subtle hover effect */
+}
+
+/* --- Desktop Styles --- */
 @media (min-width: 768px) {
   .menu {
-    display: flex;
-    flex-direction: row; /* CHANGED: This makes the links horizontal! */
-    gap: 10px;           /* Adds space between the links */
-    width: auto;         /* Let the menu take only the space it needs */
+    display: flex !important; /* Always visible on desktop */
+    flex-direction: row;      /* Horizontal layout */
+    gap: 10px;                /* Space between links */
+    width: auto;
   }
 
   .menu-toggle {
-    display: none;
+    display: none;            /* Hide hamburger on desktop */
   }
 }
+
   
   .header-content {
   display: flex;

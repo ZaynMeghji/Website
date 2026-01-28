@@ -195,7 +195,7 @@ ul {
 
 @media (max-width: 767px) {
   .header-content {
-    flex-direction: column;
+    flex-direction: row;
     align-items: stretch;
   }
 }

@@ -146,7 +146,7 @@ ul {
 /* Menu hidden by default on mobile */
 .menu {
   display: none;             /* Hidden until toggled open */
-  flex-direction: column;    /* Vertical layout on mobile */
+  flex-direction: row;    /* Vertical layout on mobile */
   width: 100%;
   padding: 0;
   margin: 0;
@@ -159,10 +159,17 @@ ul {
 /* Menu links */
 .menu li a {
   display: block;
-  padding: 2px;              /* Matches your previous padding */
+  padding: 2px;
+  padding-bottom:6px;              /* Matches your previous padding */
   text-decoration: none;
   color: rgb(0,0,0);
   font-size: 14px;
+}
+
+.menu li a.active {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 6px;
 }
 
 .menu li a:hover {

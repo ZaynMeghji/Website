@@ -123,6 +123,12 @@ ul {
   list-style: none;         /* Remove bullets */
 }
 
+ul.services { 
+  padding: 10px;
+  list-style: disc;        /* Keep bullets for services list */
+  margin-left: 20px;      /* Indent services list */
+}
+
 .top-menu {
   background-color: white;  
   position: sticky;
